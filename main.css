@@ -9,11 +9,19 @@ body {
     background-color: #212121;
 }
 
+img{
+    text-align: center;
+    align-self: center;
+}
+
 form {
 
     text-align: center;
 }
-
+div {
+    display: grid;
+    place-items: center;
+}
 
 
 .container {
