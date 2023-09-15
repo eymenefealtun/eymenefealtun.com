@@ -1,2 +1,2 @@
 # eymenefealtun.com
-[My personal website](https://www.eymenefealtun.com/)
+[www.eymenefealtun.com](https://www.eymenefealtun.com/)
