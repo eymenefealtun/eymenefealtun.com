@@ -1,15 +1,27 @@
-h1,
+h1 {
+    text-align: center;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
 h2 {
     text-align: center;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: white;
+    font-size: 15px;
+    margin-bottom: 50;
+}
+
+.ProfilePhoto{
+    margin-top: 20;
 }
 
 body {
     background-color: #212121;
 }
 
-img{
+img {
     text-align: center;
     align-self: center;
 }
@@ -18,16 +30,8 @@ form {
 
     text-align: center;
 }
+
 div {
     display: grid;
     place-items: center;
-}
-
-
-.container {
-    /* width: 500px; */
-    margin-right: 200px;
-    margin-left: 200px;
-    height: 250px;
-    outline: solid 1px white;
 }
