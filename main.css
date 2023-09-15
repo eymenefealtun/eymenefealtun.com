@@ -1,37 +1,92 @@
-h1 {
+.photo {
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+
+}
+
+.nameInfo {}
+
+.mainName {
     text-align: center;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
+    font-size: 26px;
     color: white;
-
 }
 
-h2 {
+.titleOfPerson {
     text-align: center;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-family: 'Poppins';
     color: white;
-    font-size: 15px;
-    margin-bottom: 50;
+    margin-top: -20px;
 }
 
-.ProfilePhoto{
-    margin-top: 20;
-}
+
+
 
 body {
     background-color: #212121;
 }
 
-img {
+
+
+
+
+.mainContainer {
+    width: 91%;
+    max-width: 680px;
+    margin: auto;
+    display: flex;
     text-align: center;
-    align-self: center;
-}
-
-form {
-
-    text-align: center;
-}
-
-div {
-    display: grid;
+    flex-direction: column;
     place-items: center;
+}
+
+
+
+.tile {
+    width: 100%;
+    background-color: #cbcbcb;
+    margin: 7px;
+    border-radius: 17px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.infoLabel {
+    display: flex;
+    font-size: 18px;
+    color: black;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.ImageClass {
+    flex: 1;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    overflow: hidden;
+    justify-content: left;
+}
+
+.hiddenClass {
+    flex: 1;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    overflow: hidden;
+    justify-content: left;
+    visibility: hidden;
+    background-color: red;
+}
+
+
+.tile:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
 }
