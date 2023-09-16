@@ -1,26 +1,51 @@
 .photo {
     display: -webkit-flex;
+    /* display:inline-flex; */
     align-items: center;
-    background-color: pink;
+    /* background-color: pink; */
     margin-top: 30px;
-
-
     /* justify-content: center; */
     margin-left: 50%;
 
 }
-.mainProfilePhoto{
+
+.mainProfilePhoto {
     margin-left: -50px;
 }
+
 .SurvivalLabel {
 
     color: white;
     font-family: 'Poppins';
+    font-size: 14px;
+    margin-top: -15px;
+    margin-left: 15px;
+}
+.DayLabel {
+
+    color: white;
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin-top: -15px;
+    margin-left: 15px;
+}
+
+.SurvivalLine{
+  margin-top: -15px;
+  margin-bottom: 22px;
+  background-color: red;
+}
+
+
+.SurvivalTimeMainLabel {
+    color: greenyellow;
+    font-family: 'Poppins';
     font-size: 17px;
 }
 
+
 .SurvivalTimeDiv {
-    background-color: purple;
+    /* background-color: purple; */
     margin-left: 30px;
 }
 
