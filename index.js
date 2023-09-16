@@ -30,8 +30,14 @@ function updateCountdown() {
 
 
 
-   document.getElementById("lblDay").innerHTML = days + ' Day';
-   document.getElementById("lblHours").innerHTML = hours + ' Hours';
-   document.getElementById("lblMinute").innerHTML = minutes + ' Minute';
+   document.getElementById("lblDay").innerHTML = days + ' Days';
+   if (hours > 1)
+      document.getElementById("lblHours").innerHTML = hours + ' Hours';
+   else
+      document.getElementById("lblHours").innerHTML = hours + ' Hour';
+   if (minutes > 1)
+      document.getElementById("lblMinute").innerHTML = minutes + ' Minutes';
+   else
+      document.getElementById("lblMinute").innerHTML = minutes + ' Minute';
    document.getElementById("lblSecond").innerHTML = seconds + ' Seconds';
 }

@@ -19,6 +19,7 @@
     font-family: 'Poppins';
     font-size: 14px;
     margin-top: -15px;
+    text-align: left;
     margin-left: 15px;
 }
 .DayLabel {
@@ -27,18 +28,23 @@
     font-family: 'Poppins';
     font-size: 14px;
     margin-top: -15px;
+    text-align: left;
     margin-left: 15px;
 }
 
 .SurvivalLine{
   margin-top: -15px;
   margin-bottom: 22px;
+  margin-left: 2px;
+  text-align: center;
+  margin-right: 2px;
   background-color: red;
 }
 
 
 .SurvivalTimeMainLabel {
     color: greenyellow;
+    text-align: center;
     font-family: 'Poppins';
     font-size: 17px;
 }
@@ -49,7 +55,6 @@
     margin-left: 30px;
 }
 
-.nameInfo {}
 
 .mainName {
     text-align: center;
@@ -74,7 +79,9 @@ body {
 }
 
 
-
+.nameInfo{
+    margin-top: -30px;
+}
 
 
 .mainContainer {
