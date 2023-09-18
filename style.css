@@ -2,16 +2,41 @@
     display: -webkit-flex;
     /* display:inline-flex; */
     align-items: center;
-    /* background-color: pink; */
+    background-color: red;
     margin-top: 30px;
     /* justify-content: center; */
     margin-left: 50%;
 
 }
 
-.mainProfilePhoto {
-    margin-left: -50px;
+.photoTile {
+    width: 100%;
+    /* background-color: red; */
+    margin: 7px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 }
+
+.photoContainer {
+    width: 91%;
+    max-width: 480px;
+    margin: auto;
+    display: flex;
+    /* background-color: rebeccapurple; */
+    text-align: center;
+    flex-direction: column;
+    place-items: center;
+}
+
+.mainProfilePhoto {
+    align-self: center;
+}
+
+.view {
+    align-self: center;
+}
+
 
 .SurvivalLabel {
 
@@ -22,6 +47,7 @@
     text-align: left;
     margin-left: 15px;
 }
+
 .DayLabel {
 
     color: white;
@@ -32,13 +58,13 @@
     margin-left: 15px;
 }
 
-.SurvivalLine{
-  margin-top: -15px;
-  margin-bottom: 22px;
-  margin-left: 2px;
-  text-align: center;
-  margin-right: 2px;
-  background-color: red;
+.SurvivalLine {
+    margin-top: -15px;
+    margin-bottom: 22px;
+    margin-left: 2px;
+    text-align: center;
+    margin-right: 2px;
+    background-color: red;
 }
 
 
@@ -50,10 +76,7 @@
 }
 
 
-.SurvivalTimeDiv {
-    /* background-color: purple; */
-    margin-left: 30px;
-}
+
 
 
 .mainName {
@@ -79,7 +102,7 @@ body {
 }
 
 
-.nameInfo{
+.nameInfo {
     margin-top: -30px;
 }
 
@@ -133,7 +156,7 @@ body {
     overflow: hidden;
     justify-content: left;
     visibility: hidden;
-    background-color: red;
+    background-color: blue;
 }
 
 
