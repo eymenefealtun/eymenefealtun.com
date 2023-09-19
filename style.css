@@ -113,9 +113,11 @@ body {
     margin: auto;
     display: flex;
     text-align: center;
+    /* background-color: red; */
     flex-direction: column;
-    place-items: center;
+    /* place-items: center; */
 }
+
 
 
 
@@ -126,9 +128,55 @@ body {
     border-radius: 17px;
     text-decoration: none;
     display: flex;
+    align-self: center;
     justify-content: space-between;
 }
 
+.resumeClass {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumeTile {
+    width: 40%;
+    background-color: #cbcbcb;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 17px;
+    text-decoration: none;
+    display: flex;
+    align-self: left;
+    justify-content: center;
+
+
+}
+
+.emailTile {
+    width: 40%;
+    background-color: #cbcbcb;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 17px;
+    text-decoration: none;
+    display: flex;
+    align-self: right;
+    justify-content: center;
+}
+
+.symbolTriangle {
+    display: flex;
+    overflow: hidden;
+    align-self: center;
+    justify-content: center;
+}
+
+.lblResume {
+    display: flex;
+    font-size: 18px;
+    color: black;
+    font-family: 'Poppins';
+    text-align: center;
+}
 
 
 .infoLabel {
@@ -161,6 +209,13 @@ body {
 
 
 .tile:hover {
+    transition: cubic-bezier(.54, 1.5, .38, 1.11) 0.2s;
+    transform: scale(1.02);
+    transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11);
+
+}
+
+.resumeTile:hover {
     transition: cubic-bezier(.54, 1.5, .38, 1.11) 0.2s;
     transform: scale(1.02);
     transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11);
