@@ -221,3 +221,9 @@ body {
     transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11);
 
 }
+.emailTile:hover {
+    transition: cubic-bezier(.54, 1.5, .38, 1.11) 0.2s;
+    transform: scale(1.02);
+    transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11);
+
+}
