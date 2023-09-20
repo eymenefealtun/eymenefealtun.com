@@ -1,59 +1,69 @@
-.photo {
-    display: -webkit-flex;
-    /* display:inline-flex; */
-    align-items: center;
-    background-color: red;
-    margin-top: 30px;
-    /* justify-content: center; */
-    margin-left: 50%;
-
+body {
+    background-color: #ebeef1;
+    margin-bottom: 80px;
 }
 
-.photoTile {
-    width: 100%;
-    /* background-color: red; */
-    margin: 7px;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.photoContainer {
-    width: 91%;
-    max-width: 480px;
-    margin: auto;
-    display: flex;
-    /* background-color: rebeccapurple; */
-    text-align: center;
-    flex-direction: column;
-    place-items: center;
-}
-
-.mainProfilePhoto {
-    align-self: center;
-}
 
 .view {
-    align-self: center;
+    margin-top: 45%;
 }
+
+.float-child-view {
+    width: 120px;
+    height: 120px;
+    /* padding: 10px; */
+    /* border: 2px solid purple; */
+
+}
+
+
+.float-container {
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    /* margin: auto; */
+    text-align: center;
+    position: relative;
+    /* background-color: lightblue; */
+}
+
+.float-child {
+    width: 120px;
+    height: 120px;
+    /* background-color: #e1e1e1e; */
+    /* padding: 10px; */
+    /* border: 2px solid red; */
+
+}
+
+
 
 
 .SurvivalLabel {
 
-    color: white;
+    color: black;
     font-family: 'Poppins';
     font-size: 14px;
     margin-top: -15px;
+    font-weight:bold;
     text-align: left;
     margin-left: 15px;
 }
 
 .DayLabel {
 
-    color: white;
+    color: black;
     font-family: 'Poppins';
     font-size: 14px;
     margin-top: -15px;
+    font-weight: bold;
     text-align: left;
     margin-left: 15px;
 }
@@ -69,8 +79,10 @@
 
 
 .SurvivalTimeMainLabel {
-    color: greenyellow;
+    color: #022e1f;
     text-align: center;
+    margin-top: 0;
+    font-weight:bold;
     font-family: 'Poppins';
     font-size: 17px;
 }
@@ -83,27 +95,24 @@
     text-align: center;
     font-family: 'Poppins';
     font-size: 26px;
-    color: white;
+    color: black;
 }
 
 .titleOfPerson {
     text-align: center;
     font-size: 14px;
     font-family: 'Poppins';
-    color: white;
-    margin-top: -20px;
+    color: #5e5f60;
+    margin-top: -25px;
 }
 
 
 
 
-body {
-    background-color: #212121;
-}
 
 
 .nameInfo {
-    margin-top: -30px;
+    margin-top: -15px;
 }
 
 
@@ -120,10 +129,9 @@ body {
 
 
 
-
 .tile {
     width: 100%;
-    background-color: #cbcbcb;
+    background-color: white;
     margin: 7px;
     border-radius: 17px;
     text-decoration: none;
@@ -139,7 +147,7 @@ body {
 
 .resumeTile {
     width: 40%;
-    background-color: #cbcbcb;
+    background-color: white;
     margin-top: 7px;
     margin-bottom: 7px;
     border-radius: 17px;
@@ -153,7 +161,7 @@ body {
 
 .emailTile {
     width: 40%;
-    background-color: #cbcbcb;
+    background-color: white;
     margin-top: 7px;
     margin-bottom: 7px;
     border-radius: 17px;
@@ -221,9 +229,12 @@ body {
     transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11);
 
 }
+
 .emailTile:hover {
     transition: cubic-bezier(.54, 1.5, .38, 1.11) 0.2s;
     transform: scale(1.02);
     transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11);
 
 }
+
+
