@@ -17,8 +17,6 @@ var seconds = Math.round(delta % 60);
 
 
 window.onload = function () {
-   // spin();
-   // startSpin();
    setInterval(function () {
       updateCountdown();
    }, 999)
