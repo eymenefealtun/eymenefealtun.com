@@ -49,9 +49,14 @@ body {
 
 
 .view {
-    margin-top: 50%;
+    margin-right: 10px;
+    text-align: right;
 }
-
+.timeDiv{
+    /* background-color: red; */
+    position: relative;
+    /* margin-left: 10px; */
+}
 .mainProfilePhoto {
     text-align: center;
 
@@ -60,9 +65,11 @@ body {
 .float-child-view {
     width: 120px;
     height: 120px;
-    /* padding: 10px; */
+    display: flex;
+    align-items:center;
+    justify-content: right;
     /* border: 2px solid purple; */
-    text-align: right;
+    /* text-align: right; */
 
 }
 
