@@ -17,6 +17,8 @@ var seconds = Math.round(delta % 60);
 
 
 window.onload = function () {
+   // spin();
+   // startSpin();
    setInterval(function () {
       updateCountdown();
    }, 999)
@@ -54,7 +56,10 @@ function updateCountdown() {
 
 function increaseView() {
    var xmlHttp = new XMLHttpRequest();
-   xmlHttp.open("GET", "https://camo.githubusercontent.com/f11907362bd64e699203a94db21a230430129046085099d1a485e0b3fd3a49eb/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d65796d656e656665616c74756e266c6162656c3d50726f66696c65253230766965777326636f6c6f723d306537356236267374796c653d666c6174", false); // false for synchronous request
+   xmlHttp.open("GET", "https://camo.githubusercontent.com/d31dad30b174a78e4a6f317e422c93e7f8e0adb4d62161cf4648c29820df54b8/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d65796d656e656665616c74756e266c6162656c3d566965777326636f6c6f723d433131343838267374796c653d666c61742d737175617265", false); // false for synchronous request
    xmlHttp.send(null);
    return xmlHttp.responseText;
 }
+
+
+

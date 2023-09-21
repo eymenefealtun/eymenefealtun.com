@@ -1,3 +1,47 @@
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .mainProfilePhoto {
+    -webkit-animation: rotating 3s linear infinite;
+    -moz-animation: rotating 3s linear infinite;
+    -ms-animation: rotating 3s linear infinite;
+    -o-animation: rotating 3s linear infinite;
+    animation: rotating 3s linear infinite;
+  }
+
+
+
+
+
+
+
+
+
 body {
     background-color: #ebeef1;
     margin-bottom: 80px;
@@ -8,11 +52,17 @@ body {
     margin-top: 45%;
 }
 
+.mainProfilePhoto {
+    text-align: center;
+
+}
+
 .float-child-view {
-    width: 120px;
+    width: 100px;
     height: 120px;
     /* padding: 10px; */
     /* border: 2px solid purple; */
+    /* text-align: right; */
 
 }
 
@@ -27,11 +77,11 @@ body {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 370px;
     /* margin: auto; */
     text-align: center;
     position: relative;
-    /* background-color: lightblue; */
+    /* background-color: blue; */
 }
 
 .float-child {
@@ -43,6 +93,15 @@ body {
 
 }
 
+.float-child-time {
+    width: 120px;
+    height: 120px;
+    /* background-color: #e1e1e1e; */
+    /* padding: 10px; */
+    margin-right: -20px;
+    /* border: 2px solid pink; */
+
+}
 
 
 
@@ -52,7 +111,7 @@ body {
     font-family: 'Poppins';
     font-size: 14px;
     margin-top: -15px;
-    font-weight:bold;
+    font-weight: bold;
     text-align: left;
     margin-left: 15px;
 }
@@ -79,10 +138,10 @@ body {
 
 
 .SurvivalTimeMainLabel {
-    color: #022e1f;
+    color: #08f26e;
     text-align: center;
     margin-top: 0;
-    font-weight:bold;
+    font-weight: bold;
     font-family: 'Poppins';
     font-size: 17px;
 }
@@ -236,5 +295,3 @@ body {
     transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11);
 
 }
-
-
