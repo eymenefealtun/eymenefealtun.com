@@ -41,14 +41,14 @@ function updateCountdown() {
 
    document.getElementById("lblDay").innerHTML = days + ' Days';
    if (hours > 1)
-      document.getElementById("lblHours").innerHTML = hours + ' Hours';
+      document.getElementById("lblHours").innerHTML = hours + ' H';
    else
-      document.getElementById("lblHours").innerHTML = hours + ' Hour';
+      document.getElementById("lblHours").innerHTML = hours + ' H';
    if (minutes > 1)
-      document.getElementById("lblMinute").innerHTML = minutes + ' Minutes';
+      document.getElementById("lblMinute").innerHTML = minutes + ' M';
    else
-      document.getElementById("lblMinute").innerHTML = minutes + ' Minute';
-   document.getElementById("lblSecond").innerHTML = seconds + ' Seconds';
+      document.getElementById("lblMinute").innerHTML = minutes + ' M';
+   document.getElementById("lblSecond").innerHTML = seconds + ' S';
 }
 
 
