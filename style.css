@@ -27,18 +27,12 @@
     }
   }
   .mainProfilePhoto {
-    -webkit-animation: rotating 3s linear infinite;
-    -moz-animation: rotating 3s linear infinite;
-    -ms-animation: rotating 3s linear infinite;
-    -o-animation: rotating 3s linear infinite;
-    animation: rotating 3s linear infinite;
+    -webkit-animation: rotating 522s linear infinite;
+    -moz-animation: rotating 522s linear infinite;
+    -ms-animation: rotating 522s linear infinite;
+    -o-animation: rotating 522s linear infinite;
+    animation: rotating 522s linear infinite;
   }
-
-
-
-
-
-
 
 
 
