@@ -26,7 +26,7 @@
       transform: rotate(360deg);
     }
   }
-  .mainProfilePhoto {
+  .mainProfilePhoto:hover {
     -webkit-animation: rotating 5s linear infinite;
     -moz-animation: rotating 5s linear infinite;
     -ms-animation: rotating 5s linear infinite;
@@ -37,7 +37,8 @@
 
 
 body {
-    background-color: #ebeef1;
+    /* background-color: #ebeef1; */
+    background-color: #282424;
     margin-bottom: 80px;
 }
 
@@ -118,7 +119,8 @@ body {
 
 .SurvivalLabel {
 
-    color: black;
+    /* color: black; */
+    color: white;
     font-family: 'Poppins';
     font-size: 14px;
     margin-top: -15px;
@@ -129,7 +131,8 @@ body {
 
 .DayLabel {
 
-    color: black;
+    /* color: black; */
+    color: white;
     font-family: 'Poppins';
     font-size: 14px;
     margin-top: -15px;
@@ -165,14 +168,16 @@ body {
     text-align: center;
     font-family: 'Poppins';
     font-size: 26px;
-    color: black;
+    /* color: black; */
+    color: white;
 }
 
 .titleOfPerson {
     text-align: center;
     font-size: 14px;
     font-family: 'Poppins';
-    color: #5e5f60;
+    /* color: #5e5f60; */
+    color: #e1e1e1;
     margin-top: -25px;
 }
 
@@ -201,7 +206,7 @@ body {
 
 .tile {
     width: 100%;
-    background-color: white;
+    background-color: #d2bdbd;
     margin: 7px;
     border-radius: 17px;
     text-decoration: none;
@@ -217,7 +222,7 @@ body {
 
 .resumeTile {
     width: 40%;
-    background-color: white;
+    background-color: #d2bdbd;
     margin-top: 7px;
     margin-bottom: 7px;
     border-radius: 17px;
@@ -231,7 +236,7 @@ body {
 
 .emailTile {
     width: 40%;
-    background-color: white;
+    background-color: #d2bdbd;
     margin-top: 7px;
     margin-bottom: 7px;
     border-radius: 17px;
