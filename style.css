@@ -26,15 +26,18 @@
       transform: rotate(360deg);
     }
   }
-  .mainProfilePhoto:hover {
-    -webkit-animation: rotating 5s linear infinite;
-    -moz-animation: rotating 5s linear infinite;
-    -ms-animation: rotating 5s linear infinite;
-    -o-animation: rotating 5s linear infinite;
-    animation: rotating 5s linear infinite;
+  .mainProfilePhoto {
+    -webkit-animation: rotating 20s linear infinite;
+    -moz-animation: rotating 20s linear infinite;
+    -ms-animation: rotating 20s linear infinite;
+    -o-animation: rotating 20s linear infinite;
+    animation: rotating 20s linear infinite;
   }
 
 
+.audioPlayer {
+animation-play-state: running;
+}
 
 body {
     /* background-color: #ebeef1; */

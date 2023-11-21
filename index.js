@@ -15,8 +15,16 @@ delta -= minutes * 60;
 
 var seconds = Math.round(delta % 60);
 
+function musicPlay() {
+   document.getElementById('player').play();
+   document.removeEventListener('click', musicPlay);
+}
 
 window.onload = function () {
+
+   document.addEventListener('click', musicPlay);
+
+
    setInterval(function () {
       updateCountdown();
    }, 999)
