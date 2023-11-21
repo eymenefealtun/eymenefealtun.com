@@ -22,7 +22,7 @@ function musicPlay() {
 
 window.onload = function () {
 
-   document.addEventListener('click', musicPlay);
+   //document.addEventListener('click', musicPlay);
 
 
    setInterval(function () {
@@ -32,6 +32,7 @@ window.onload = function () {
    increaseView();
    updateCountdown();
 
+musicPlay();
 };
 
 
