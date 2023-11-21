@@ -22,8 +22,7 @@ function musicPlay() {
 
 window.onload = function () {
 
-   //document.addEventListener('click', musicPlay);
-document.getElementById('player').play();
+   document.addEventListener('click', musicPlay);
 
    setInterval(function () {
       updateCountdown();
