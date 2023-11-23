@@ -15,20 +15,68 @@ delta -= minutes * 60;
 
 var seconds = Math.round(delta % 60);
 
-// function musicPlay() {
-//    document.getElementById('player').play();
-//    document.removeEventListener('click', musicPlay);
-// }
 
-const mainPage  = document.getElementById("mainPage");
+var mainPage = document.getElementById("mainPhoto");
+var isPhotoclicked = false
+var rotationAngle = 0;
 
-mainPage.addEventListener("mouseover", (event) =>{
-   document.getElementById('player').play();
+function handleMusic(isStarted) {
+
+
+   if (isStarted == false) {
+
+      // rotationAngle = getCurrentRotation(3)
+      isPhotoclicked = true;
+
+      //mainPage.removeAttribute("class", "mainProfilePhotoClickAfterFirstOne");
+      document.getElementById('player').play();
+      mainPage.setAttribute("class", "mainProfilePhoto");
+      document.getElementById("mainPhoto").style.transform = "rotate("+rotationAngle+"deg)";
+
+   console.log("1:  "+rotationAngle)
+
+      
+   }
+   else if (isStarted == true) {
+
+      rotationAngle = getCurrentRotation(mainPage)
+      isPhotoclicked = false;
+
+      mainPage.removeAttribute("class", "mainProfilePhoto");
+      document.getElementById('player').pause();
+      mainPage.setAttribute("class", "mainProfilePhotoClickAfterFirstOne");
+
+      mainPage.style.transform = "rotate("+rotationAngle+"deg)";
+      console.log("2:  "+rotationAngle)
+
+   }
+
+
+}
+
+function getCurrentRotation(el){
+  var st = window.getComputedStyle(el, null);
+  var tm = st.getPropertyValue("-webkit-transform") ||
+           st.getPropertyValue("-moz-transform") ||
+           st.getPropertyValue("-ms-transform") ||
+           st.getPropertyValue("-o-transform") ||
+           st.getPropertyValue("transform") ||
+           "none";
+  if (tm != "none") {
+    var values = tm.split('(')[1].split(')')[0].split(',');
+    var angle = Math.round(Math.atan2(values[1],values[0]) * (180/Math.PI));
+    return (angle < 0 ? angle + 360 : angle); 
+  }
+  return 0;
+}
+
+// mainPage.addEventListener("mouseover", (event) =>{
+mainPage.addEventListener("click", (event) => {
+   handleMusic(isPhotoclicked,rotationAngle);
+   //mainPage.setAttribute("class", "mainProfilePhoto");
 })
 
 window.onload = function () {
-
-   //document.addEventListener('click', musicPlay);
 
    setInterval(function () {
       updateCountdown();
