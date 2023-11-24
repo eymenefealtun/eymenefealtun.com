@@ -16,65 +16,27 @@ delta -= minutes * 60;
 var seconds = Math.round(delta % 60);
 
 
-var mainPage = document.getElementById("mainPhoto");
+var mainPhoto = document.getElementById("mainPhoto");
 var isPhotoclicked = false
-var rotationAngle = 0;
+
+mainPhoto.addEventListener("click", (event) => {
+   handleMusic(isPhotoclicked);
+})
 
 function handleMusic(isStarted) {
-
-
    if (isStarted == false) {
-
-      // rotationAngle = getCurrentRotation(3)
       isPhotoclicked = true;
-
-      //mainPage.removeAttribute("class", "mainProfilePhotoClickAfterFirstOne");
       document.getElementById('player').play();
-      mainPage.setAttribute("class", "mainProfilePhoto");
-      document.getElementById("mainPhoto").style.transform = "rotate("+rotationAngle+"deg)";
+      mainPhoto.setAttribute("class", "mainProfilePhoto");
 
-   console.log("1:  "+rotationAngle)
-
-      
    }
-   else if (isStarted == true) {
-
-      rotationAngle = getCurrentRotation(mainPage)
+   else {
       isPhotoclicked = false;
-
-      mainPage.removeAttribute("class", "mainProfilePhoto");
       document.getElementById('player').pause();
-      mainPage.setAttribute("class", "mainProfilePhotoClickAfterFirstOne");
-
-      mainPage.style.transform = "rotate("+rotationAngle+"deg)";
-      console.log("2:  "+rotationAngle)
-
+      mainPhoto.setAttribute("class", "mainProfilePhoto paused");
    }
-
-
 }
 
-function getCurrentRotation(el){
-  var st = window.getComputedStyle(el, null);
-  var tm = st.getPropertyValue("-webkit-transform") ||
-           st.getPropertyValue("-moz-transform") ||
-           st.getPropertyValue("-ms-transform") ||
-           st.getPropertyValue("-o-transform") ||
-           st.getPropertyValue("transform") ||
-           "none";
-  if (tm != "none") {
-    var values = tm.split('(')[1].split(')')[0].split(',');
-    var angle = Math.round(Math.atan2(values[1],values[0]) * (180/Math.PI));
-    return (angle < 0 ? angle + 360 : angle); 
-  }
-  return 0;
-}
-
-// mainPage.addEventListener("mouseover", (event) =>{
-mainPage.addEventListener("click", (event) => {
-   handleMusic(isPhotoclicked,rotationAngle);
-   //mainPage.setAttribute("class", "mainProfilePhoto");
-})
 
 window.onload = function () {
 
@@ -83,7 +45,8 @@ window.onload = function () {
    }, 999)
 
    increaseView();
-   updateCountdown();
+   
+    updateCountdown();
 };
 
 
@@ -114,10 +77,7 @@ function updateCountdown() {
 
 function increaseView() {
    var xmlHttp = new XMLHttpRequest();
-   xmlHttp.open("GET", "https://camo.githubusercontent.com/d31dad30b174a78e4a6f317e422c93e7f8e0adb4d62161cf4648c29820df54b8/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d65796d656e656665616c74756e266c6162656c3d566965777326636f6c6f723d433131343838267374796c653d666c61742d737175617265", false); // false for synchronous request
+   xmlHttp.open("GET", "https://camo.githubusercontent.com/d31dad30b174a78e4a6f317e422c93e7f8e0adb4d62161cf4648c29820df54b8/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d65796d656e656665616c74756e266c6162656c3d566965777326636f6c6f723d433131343838267374796c653d666c61742d737175617265", true); // false for synchronous request
    xmlHttp.send(null);
-   return xmlHttp.responseText;
 }
-
-
 

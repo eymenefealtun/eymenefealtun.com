@@ -33,6 +33,8 @@
     }
 }
 
+
+
 .mainProfilePhoto {
     -webkit-animation: rotating 20s linear infinite;
     -moz-animation: rotating 20s linear infinite;
@@ -41,12 +43,9 @@
     animation: rotating 20s linear infinite;
 }
 
-.mainProfilePhotoClickAfterFirstOne {
-    -webkit-animation: rotating 0s linear infinite;
-    -moz-animation: rotating 0s linear infinite;
-    -ms-animation: rotating 0s linear infinite;
-    -o-animation: rotating 0s linear infinite;
-    animation: rotating 0s linear infinite;
+.paused {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
 }
 
 
