@@ -309,6 +309,13 @@ body {
     background-color: blue;
 }
 
+.imageRecordMaster {
+    margin-bottom: -75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
 
 .tile:hover {
     transition: cubic-bezier(.54, 1.5, .38, 1.11) 0.2s;
