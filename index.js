@@ -17,6 +17,7 @@ var seconds = Math.round(delta % 60);
 
 
 var mainPhoto = document.getElementById("mainPhoto");
+var musicSign = document.getElementById("musicSign");
 var isPhotoclicked = false
 
 mainPhoto.addEventListener("click", (event) => {
@@ -28,7 +29,7 @@ function handleMusic(isStarted) {
       isPhotoclicked = true;
       document.getElementById('player').play();
       mainPhoto.setAttribute("class", "mainProfilePhoto");
-
+      musicSign.setAttribute("class", "imageRecordMasterHidden");
    }
    else {
       isPhotoclicked = false;
@@ -44,7 +45,7 @@ window.onload = function () {
       updateCountdown();
    }, 999)
 
-   increaseView();
+   // increaseView();
    
     updateCountdown();
 };

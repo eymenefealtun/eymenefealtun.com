@@ -316,7 +316,14 @@ body {
     justify-content: center;
     object-fit: contain;
 }
-
+.imageRecordMasterHidden {
+    margin-bottom: -75px;
+    visibility: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
 .tile:hover {
     transition: cubic-bezier(.54, 1.5, .38, 1.11) 0.2s;
     transform: scale(1.02);
