@@ -45,7 +45,7 @@ window.onload = function () {
       updateCountdown();
    }, 999)
 
-   // increaseView();
+   increaseView();
    
     updateCountdown();
 };
