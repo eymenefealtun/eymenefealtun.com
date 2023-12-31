@@ -78,7 +78,7 @@ function updateCountdown() {
 
 function increaseView() {
    var xmlHttp = new XMLHttpRequest();
-   xmlHttp.open("GET", "https://camo.githubusercontent.com/d31dad30b174a78e4a6f317e422c93e7f8e0adb4d62161cf4648c29820df54b8/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d65796d656e656665616c74756e266c6162656c3d566965777326636f6c6f723d433131343838267374796c653d666c61742d737175617265", true); // false for synchronous request
+   xmlHttp.open("GET", "https://camo.githubusercontent.com/0a723fc0a2a18ff3129ba5d94f06cb9812283ad9360af72d71bf6c0ea9c3c742/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d65796d656e656665616c74756e267374796c653d666c61742d737175617265", true); // false for synchronous request
    xmlHttp.send(null);
 }
 
