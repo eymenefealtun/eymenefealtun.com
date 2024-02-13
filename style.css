@@ -289,6 +289,16 @@ body {
     text-align: center;
 }
 
+.infoLabelSmaller {
+    display: flex;
+    font-size: 15px;
+    color: black;
+    font-family: 'Poppins';
+    text-align: center;
+    align-self: center;
+    align-items: center;
+}
+
 .ImageClass {
     flex: 1;
     position: relative;
