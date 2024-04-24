@@ -1,79 +1,79 @@
-// var date_future = new Date(2003, 7, 5, 10, 40);
+var date_future = new Date(2003, 7, 5, 10, 40);
 
-// var date_now = new Date();
+var date_now = new Date();
 
-// var delta = Math.abs(date_future - date_now) / 1000;
+var delta = Math.abs(date_future - date_now) / 1000;
 
-// var days = Math.floor(delta / 86400);
-// delta -= days * 86400;
+var days = Math.floor(delta / 86400);
+delta -= days * 86400;
 
-// var hours = Math.floor(delta / 3600) % 24;
-// delta -= hours * 3600;
+var hours = Math.floor(delta / 3600) % 24;
+delta -= hours * 3600;
 
-// var minutes = Math.floor(delta / 60) % 60;
-// delta -= minutes * 60;
+var minutes = Math.floor(delta / 60) % 60;
+delta -= minutes * 60;
 
-// var seconds = Math.round(delta % 60);
+var seconds = Math.round(delta % 60);
 
 
-// var mainPhoto = document.getElementById("mainPhoto");
-// var musicSign = document.getElementById("musicSign");
-// var isPhotoclicked = false
+var mainPhoto = document.getElementById("mainPhoto");
+var musicSign = document.getElementById("musicSign");
+var isPhotoclicked = false
 
-// mainPhoto.addEventListener("click", (event) => {
-//    handleMusic(isPhotoclicked);
-// })
+mainPhoto.addEventListener("click", (event) => {
+   handleMusic(isPhotoclicked);
+})
 
-// function handleMusic(isStarted) {
-//    if (isStarted == false) {
-//       isPhotoclicked = true;
-//       document.getElementById('player').play();
-//       mainPhoto.setAttribute("class", "mainProfilePhoto");
-//       musicSign.setAttribute("class", "imageRecordMasterHidden");
-//    }
-//    else {
-//       isPhotoclicked = false;
-//       document.getElementById('player').pause();
-//       mainPhoto.setAttribute("class", "mainProfilePhoto paused");
-//    }
-// }
+function handleMusic(isStarted) {
+   if (isStarted == false) {
+      isPhotoclicked = true;
+      document.getElementById('player').play();
+      mainPhoto.setAttribute("class", "mainProfilePhoto");
+      musicSign.setAttribute("class", "imageRecordMasterHidden");
+   }
+   else {
+      isPhotoclicked = false;
+      document.getElementById('player').pause();
+      mainPhoto.setAttribute("class", "mainProfilePhoto paused");
+   }
+}
 
 
 window.onload = function () {
 
-   // setInterval(function () {
-   //    updateCountdown();
-   // }, 999)
+   setInterval(function () {
+      updateCountdown();
+   }, 999)
 
    increaseView();
    
-   //  updateCountdown();
+    updateCountdown();
 };
 
 
-// function updateCountdown() {
+function updateCountdown() {
 
-//    date_now = new Date();
-//    delta = Math.abs(date_future - date_now) / 1000;
-//    days = Math.floor(delta / 86400);
-//    delta -= days * 86400;
-//    hours = Math.floor(delta / 3600) % 24;
-//    delta -= hours * 3600;
-//    minutes = Math.floor(delta / 60) % 60;
-//    delta -= minutes * 60;
-//    seconds = Math.round(delta % 60);
+   date_now = new Date();
+   delta = Math.abs(date_future - date_now) / 1000;
+   days = Math.floor(delta / 86400);
+   delta -= days * 86400;
+   hours = Math.floor(delta / 3600) % 24;
+   delta -= hours * 3600;
+   minutes = Math.floor(delta / 60) % 60;
+   delta -= minutes * 60;
+   seconds = Math.round(delta % 60);
 
-//    document.getElementById("lblDay").innerHTML = days + ' Days';
-//    if (hours > 1)
-//       document.getElementById("lblHours").innerHTML = hours + ' H';
-//    else
-//       document.getElementById("lblHours").innerHTML = hours + ' H';
-//    if (minutes > 1)
-//       document.getElementById("lblMinute").innerHTML = minutes + ' M';
-//    else
-//       document.getElementById("lblMinute").innerHTML = minutes + ' M';
-//    document.getElementById("lblSecond").innerHTML = seconds + ' S';
-// }
+   document.getElementById("lblDay").innerHTML = days + ' Days';
+   if (hours > 1)
+      document.getElementById("lblHours").innerHTML = hours + ' H';
+   else
+      document.getElementById("lblHours").innerHTML = hours + ' H';
+   if (minutes > 1)
+      document.getElementById("lblMinute").innerHTML = minutes + ' M';
+   else
+      document.getElementById("lblMinute").innerHTML = minutes + ' M';
+   document.getElementById("lblSecond").innerHTML = seconds + ' S';
+}
 
 
 function increaseView() {
