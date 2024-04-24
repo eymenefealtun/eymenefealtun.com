@@ -38,16 +38,15 @@ function handleMusic(isStarted) {
    }
 }
 
-
 window.onload = function () {
 
    setInterval(function () {
       updateCountdown();
+     
+      
    }, 999)
-
    increaseView();
-   
-    updateCountdown();
+   updateCountdown();
 };
 
 
@@ -73,6 +72,7 @@ function updateCountdown() {
    else
       document.getElementById("lblMinute").innerHTML = minutes + ' M';
    document.getElementById("lblSecond").innerHTML = seconds + ' S';
+
 }
 
 

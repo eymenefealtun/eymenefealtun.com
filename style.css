@@ -225,7 +225,7 @@ body {
 
 .tile {
     width: 100%;
-    background-color: #d2bdbd;
+    background-color: #7d7070;
     margin: 7px;
     border-radius: 17px;
     text-decoration: none;
@@ -241,7 +241,7 @@ body {
 
 .resumeTile {
     width: 40%;
-    background-color: #d2bdbd;
+    background-color: #7d7070;
     margin-top: 7px;
     margin-bottom: 7px;
     border-radius: 17px;
@@ -255,7 +255,7 @@ body {
 
 .emailTile {
     width: 40%;
-    background-color: #d2bdbd;
+    background-color: #7d7070;
     margin-top: 7px;
     margin-bottom: 7px;
     border-radius: 17px;
