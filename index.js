@@ -24,6 +24,15 @@ mainPhoto.addEventListener("click", (event) => {
    handleMusic(isPhotoclicked);
 })
 
+document.body.onkeyup = function(e) {
+   if (e.key == " " ||
+       e.code == "Space" ||      
+       e.keyCode == 32      
+   ) {
+      handleMusic(isPhotoclicked);
+   }
+ }
+
 function handleMusic(isStarted) {
    if (isStarted == false) {
       isPhotoclicked = true;
