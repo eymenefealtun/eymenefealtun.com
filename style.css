@@ -54,10 +54,61 @@
 }
 
 body {
-    /* background-color: #ebeef1; */
-    background-color: #282424;
+    background-color: #002664;
     margin-bottom: 80px;
 }
+
+.tile {
+    width: 100%;
+    background-color: #bb133e;
+    margin: 7px;
+    border-radius: 17px;
+    text-decoration: none;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.resumeTile {
+    width: 40%;
+    background-color: #bb133e;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 17px;
+    text-decoration: none;
+    display: flex;
+    align-self: left;
+    justify-content: center;
+}
+
+.emailTile {
+    width: 40%;
+    background-color: #bb133e;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 17px;
+    text-decoration: none;
+    display: flex;
+    align-self: right;
+    justify-content: center;
+}
+
+.infoLabel {
+    display: flex;
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.lblResume {
+    display: flex;
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
 
 
 .view {
@@ -223,47 +274,14 @@ body {
 
 
 
-.tile {
-    width: 100%;
-    background-color: #7d7070;
-    margin: 7px;
-    border-radius: 17px;
-    text-decoration: none;
-    display: flex;
-    align-self: center;
-    justify-content: space-between;
-}
+
 
 .resumeClass {
     display: flex;
     justify-content: space-between;
 }
 
-.resumeTile {
-    width: 40%;
-    background-color: #7d7070;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    border-radius: 17px;
-    text-decoration: none;
-    display: flex;
-    align-self: left;
-    justify-content: center;
 
-
-}
-
-.emailTile {
-    width: 40%;
-    background-color: #7d7070;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    border-radius: 17px;
-    text-decoration: none;
-    display: flex;
-    align-self: right;
-    justify-content: center;
-}
 
 .symbolTriangle {
     display: flex;
@@ -272,22 +290,10 @@ body {
     justify-content: center;
 }
 
-.lblResume {
-    display: flex;
-    font-size: 18px;
-    color: black;
-    font-family: 'Poppins';
-    text-align: center;
-}
 
 
-.infoLabel {
-    display: flex;
-    font-size: 18px;
-    color: black;
-    font-family: 'Poppins';
-    text-align: center;
-}
+
+
 
 .infoLabelSmaller {
     display: flex;
