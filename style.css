@@ -101,6 +101,15 @@ body {
     text-align: center;
 }
 
+.infoLabelAmerika {
+    display: flex;
+    font-size: 16px;
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+    align-self: center;
+}
+
 .lblResume {
     display: flex;
     font-size: 18px;
