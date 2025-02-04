@@ -36,13 +36,13 @@ document.body.onkeyup = function(e) {
 function handleMusic(isStarted) {
    if (isStarted == false) {
       isPhotoclicked = true;
-      document.getElementById('player').play();
+      //document.getElementById('player').play();
       mainPhoto.setAttribute("class", "mainProfilePhoto");
       musicSign.setAttribute("class", "imageRecordMasterHidden");
    }
    else {
       isPhotoclicked = false;
-      document.getElementById('player').pause();
+      //document.getElementById('player').pause();
       mainPhoto.setAttribute("class", "mainProfilePhoto paused");
    }
 }
