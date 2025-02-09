@@ -17,28 +17,23 @@ var seconds = Math.round(delta % 60);
 
 
 var mainPhoto = document.getElementById("mainPhoto");
-var musicSign = document.getElementById("musicSign");
 var isPhotoclicked = false
 
 mainPhoto.addEventListener("click", (event) => {
    handleMusic(isPhotoclicked);
 })
 
-document.body.onkeyup = function(e) {
-   if (e.key == " " ||
-       e.code == "Space" ||      
-       e.keyCode == 32      
-   ) {
+document.body.onkeyup = function (e) {
+   if (e.keyCode == 32) {
       handleMusic(isPhotoclicked);
    }
- }
+}
 
 function handleMusic(isStarted) {
    if (isStarted == false) {
       isPhotoclicked = true;
       document.getElementById('player').play();
       mainPhoto.setAttribute("class", "mainProfilePhoto");
-      musicSign.setAttribute("class", "imageRecordMasterHidden");
    }
    else {
       isPhotoclicked = false;
@@ -51,8 +46,8 @@ window.onload = function () {
 
    setInterval(function () {
       updateCountdown();
-     
-      
+
+
    }, 999)
    increaseView();
    updateCountdown();
