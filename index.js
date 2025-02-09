@@ -19,15 +19,9 @@ var seconds = Math.round(delta % 60);
 var mainPhoto = document.getElementById("mainPhoto");
 var isPhotoclicked = false
 
-mainPhoto.addEventListener("click", (event) => {
-   handleMusic(isPhotoclicked);
-})
 
-document.body.onkeyup = function (e) {
-   if (e.keyCode == 32) {
-      handleMusic(isPhotoclicked);
-   }
-}
+
+
 
 function handleMusic(isStarted) {
    if (isStarted == false) {
@@ -43,6 +37,18 @@ function handleMusic(isStarted) {
 }
 
 window.onload = function () {
+
+
+   mainPhoto.addEventListener("click", (event) => {
+      handleMusic(isPhotoclicked);
+   })
+   
+   document.body.onkeyup = function (e) {
+      if (e.keyCode == 32) {
+         handleMusic(isPhotoclicked);
+      }
+   }
+
 
    setInterval(function () {
       updateCountdown();
