@@ -17,6 +17,8 @@ var seconds = Math.round(delta % 60);
 
 
 var mainPhoto = document.getElementById("mainPhoto");
+var player = document.getElementById('player');
+player.autoplay = false;
 var isPhotoclicked = false
 
 
@@ -26,13 +28,13 @@ var isPhotoclicked = false
 function handleMusic(isStarted) {
    if (isStarted == false) {
       isPhotoclicked = true;
-      document.getElementById('player').play();
       mainPhoto.setAttribute("class", "mainProfilePhoto");
+      player.play();
    }
    else {
       isPhotoclicked = false;
-      document.getElementById('player').pause();
       mainPhoto.setAttribute("class", "mainProfilePhoto paused");
+      player.pause();
    }
 }
 
@@ -43,11 +45,11 @@ window.onload = function () {
       handleMusic(isPhotoclicked);
    })
 
-   // document.body.onkeyup = function (e) {
-   //    if (e.keyCode == 32) {
-   //       handleMusic(isPhotoclicked);
-   //    }
-   // }
+   document.body.onkeyup = function (e) {
+      if (e.keyCode == 32) {
+         handleMusic(isPhotoclicked);
+      }
+   }
 
 
    setInterval(function () {
