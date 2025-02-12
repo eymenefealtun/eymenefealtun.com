@@ -42,12 +42,12 @@ window.onload = function () {
    mainPhoto.addEventListener("click", (event) => {
       handleMusic(isPhotoclicked);
    })
-   
-   document.body.onkeyup = function (e) {
-      if (e.keyCode == 32) {
-         handleMusic(isPhotoclicked);
-      }
-   }
+
+   // document.body.onkeyup = function (e) {
+   //    if (e.keyCode == 32) {
+   //       handleMusic(isPhotoclicked);
+   //    }
+   // }
 
 
    setInterval(function () {
