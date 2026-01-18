@@ -1,0 +1,368 @@
+@-webkit-keyframes rotating
+
+/* Safari and Chrome */
+    {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.mainProfilePhoto {
+    -webkit-animation: rotating 20s linear infinite;
+    -moz-animation: rotating 20s linear infinite;
+    -ms-animation: rotating 20s linear infinite;
+    -o-animation: rotating 20s linear infinite;
+    animation: rotating 20s linear infinite;
+}
+
+.paused {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+
+
+body {
+    background-color: #002664;
+    margin-bottom: 80px;
+}
+
+.tile {
+    width: 100%;
+    background-color: #bb133e;
+    margin: 7px;
+    border-radius: 17px;
+    text-decoration: none;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.resumeTile {
+    width: 40%;
+    background-color: #bb133e;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 17px;
+    text-decoration: none;
+    display: flex;
+    align-self: left;
+    justify-content: center;
+}
+
+.emailTile {
+    width: 40%;
+    background-color: #bb133e;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 17px;
+    text-decoration: none;
+    display: flex;
+    align-self: right;
+    justify-content: center;
+}
+
+.infoLabel {
+    display: flex;
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.infoLabelAmerika {
+    display: flex;
+    font-size: 16px;
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+    align-self: center;
+}
+
+.lblResume {
+    display: flex;
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+
+
+.view {
+    margin-right: 10px;
+    text-align: right;
+}
+
+.timeDiv {
+    /* background-color: red; */
+    position: relative;
+    /* margin-left: 10px; */
+}
+
+.mainProfilePhoto {
+    text-align: center;
+
+}
+
+.float-child-view {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /* border: 2px solid purple; */
+    /* text-align: right; */
+
+}
+
+
+.float-container {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* gap: 15px; */
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 360px; */
+
+    width: 91%;
+    max-width: 680px;
+
+
+
+    /* margin: auto; */
+    /* text-align: center; */
+    /* position: relative; */
+    /* background-color: blue; */
+}
+
+.float-child {
+    width: 120px;
+    height: 120px;
+    /* background-color: #e1e1e1e; */
+    /* padding: 10px; */
+    /* border: 2px solid red; */
+
+}
+
+.float-child-time {
+    width: 120px;
+    height: 120px;
+    /* background-color: #e1e1e1e; */
+    /* padding: 10px; */
+    /* margin-right: -20px; */
+    /* border: 2px solid pink; */
+
+}
+
+
+
+.SurvivalLabel {
+
+    /* color: black; */
+    color: white;
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin-top: -15px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.DayLabel {
+
+    /* color: black; */
+    color: white;
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin-top: -15px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.SurvivalLine {
+    margin-top: -15px;
+    margin-bottom: 22px;
+    margin-left: 2px;
+    text-align: center;
+    margin-right: 2px;
+    background-color: red;
+}
+
+
+.SurvivalTimeMainLabel {
+    color: #08f26e;
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 17px;
+}
+
+
+
+
+
+.mainName {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 26px;
+    /* color: black; */
+    color: white;
+}
+
+.titleOfPerson {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins';
+    /* color: #5e5f60; */
+    color: #e1e1e1;
+    margin-top: -25px;
+}
+
+
+
+
+
+
+.nameInfo {
+    margin-top: -15px;
+}
+
+
+.mainContainer {
+    width: 91%;
+    max-width: 680px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    /* background-color: gray; */
+    flex-direction: column;
+    /* place-items: center; */
+}
+
+
+
+
+
+.resumeClass {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.symbolTriangle {
+    display: flex;
+    overflow: hidden;
+    align-self: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+.infoLabelSmaller {
+    display: flex;
+    font-size: 15px;
+    color: black;
+    font-family: 'Poppins';
+    text-align: center;
+    align-self: center;
+    align-items: center;
+}
+
+.ImageClass {
+    flex: 1;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    overflow: hidden;
+    justify-content: left;
+}
+
+.hiddenClass {
+    flex: 1;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    overflow: hidden;
+    justify-content: left;
+    visibility: hidden;
+    background-color: blue;
+}
+
+.imageRecordMaster {
+    margin-bottom: -75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
+.imageRecordMasterHidden {
+    margin-bottom: -75px;
+    visibility: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
+.tile:hover {
+    transition: cubic-bezier(.54, 1.5, .38, 1.11) 0.2s;
+    transform: scale(1.02);
+    transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11);
+
+}
+
+.resumeTile:hover {
+    transition: cubic-bezier(.54, 1.5, .38, 1.11) 0.2s;
+    transform: scale(1.02);
+    transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11);
+
+}
+
+.emailTile:hover {
+    transition: cubic-bezier(.54, 1.5, .38, 1.11) 0.2s;
+    transform: scale(1.02);
+    transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11);
+
+}
