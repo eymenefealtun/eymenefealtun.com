@@ -1,5 +1,4 @@
 var date_future = new Date(2003, 7, 5, 10, 40);
-
 var date_now = new Date();
 
 var delta = Math.abs(date_future - date_now) / 1000;
@@ -15,55 +14,46 @@ delta -= minutes * 60;
 
 var seconds = Math.round(delta % 60);
 
-
 var mainPhoto = document.getElementById("mainPhoto");
 var player = document.getElementById('player');
 player.autoplay = false;
-var isPhotoclicked = false
 
+var isPlaying = false; 
 
-
-
-
-function handleMusic(isStarted) {
-   if (isStarted == false) {
-      isPhotoclicked = true;
-      mainPhoto.setAttribute("class", "mainProfilePhoto");
+function toggleMusicAndAnimation() {
+   if (isPlaying === false) {
+      mainPhoto.setAttribute("class", "mainProfilePhoto"); 
       player.play();
-   }
-   else {
-      isPhotoclicked = false;
-      mainPhoto.setAttribute("class", "mainProfilePhoto paused");
+      isPlaying = true;
+   } else {
+      mainPhoto.setAttribute("class", "mainProfilePhoto paused"); 
       player.pause();
+      isPlaying = false;
    }
 }
 
 window.onload = function () {
+   mainPhoto.setAttribute("class", "mainProfilePhoto");
 
-
-   mainPhoto.addEventListener("click", (event) => {
-      handleMusic(isPhotoclicked);
-   })
+   mainPhoto.addEventListener("click", () => {
+      toggleMusicAndAnimation();
+   });
 
    document.body.onkeyup = function (e) {
       if (e.keyCode == 32) {
-         handleMusic(isPhotoclicked);
+         toggleMusicAndAnimation();
       }
    }
 
-
    setInterval(function () {
       updateCountdown();
-
-
-   }, 999)
+   }, 999);
+   
    increaseView();
    updateCountdown();
 };
 
-
 function updateCountdown() {
-
    date_now = new Date();
    delta = Math.abs(date_future - date_now) / 1000;
    days = Math.floor(delta / 86400);
@@ -84,13 +74,10 @@ function updateCountdown() {
    else
       document.getElementById("lblMinute").innerHTML = minutes + ' M';
    document.getElementById("lblSecond").innerHTML = seconds + ' S';
-
 }
-
 
 function increaseView() {
    var xmlHttp = new XMLHttpRequest();
-   xmlHttp.open("GET", "https://camo.githubusercontent.com/f5bf40c9fca8e695fa98f4c311036c71bdcbde576a248d551a2a427add964923/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d65796d656e656665616c74756e", true); // false for synchronous request
+   xmlHttp.open("GET", "https://camo.githubusercontent.com/f5bf40c9fca8e695fa98f4c311036c71bdcbde576a248d551a2a427add964923/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d65796d656e656665616c74756e", true);
    xmlHttp.send(null);
 }
-

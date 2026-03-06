@@ -1,5 +1,6 @@
 @-webkit-keyframes rotating
 
+
 /* Safari and Chrome */
     {
     from {
@@ -33,6 +34,23 @@
     }
 }
 
+
+#theme1 {
+    background-color: #1C2B23;
+}
+#theme1 .mainName, #theme1 .titleOfPerson, #theme1 .DayLabel, 
+#theme1 .SurvivalLabel, #theme1 .infoLabel, #theme1 .lblResume, 
+#theme1 .infoLabelAmerika, #theme1 .SurvivalTimeMainLabel {
+    color: #E8F0EB;
+}
+#theme1 .tile, #theme1 .resumeTile, #theme1 .emailTile {
+    background-color: #2D4A3E;
+    border: 1px solid transparent;
+}
+#theme1 .tile:hover, #theme1 .resumeTile:hover, #theme1 .emailTile:hover {
+    background-color: #3E6B57;
+    box-shadow: 0 4px 15px rgba(62, 107, 87, 0.4);
+}
 
 
 .mainProfilePhoto {
