@@ -300,9 +300,16 @@ body {
 
 
 
-.resumeClass {
+/* .resumeClass {
     display: flex;
     justify-content: space-between;
+} */
+
+.resumeClass {
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center;     /* Dikeyde hizalar */
+    width: 100%;
 }
 
 
