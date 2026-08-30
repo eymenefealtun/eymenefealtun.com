@@ -1,4 +1,4 @@
-var date_future = new Date(2003, 7, 5, 10, 40);
+var date_future = new Date(2003, 7, 5, 0, 0);
 var date_now = new Date();
 
 var delta = Math.abs(date_future - date_now) / 1000;
