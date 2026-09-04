@@ -36,20 +36,19 @@
 
 
 #theme1 {
-    background-color: #1C2B23;
+    background-color: #17181A;
 }
-#theme1 .mainName, #theme1 .titleOfPerson, #theme1 .DayLabel, 
-#theme1 .SurvivalLabel, #theme1 .infoLabel, #theme1 .lblResume, 
+#theme1 .mainName, #theme1 .titleOfPerson, #theme1 .DayLabel,
+#theme1 .SurvivalLabel, #theme1 .infoLabel, #theme1 .lblResume,
 #theme1 .infoLabelAmerika, #theme1 .SurvivalTimeMainLabel {
-    color: #E8F0EB;
+    color: #EDEEEF;
 }
 #theme1 .tile, #theme1 .resumeTile, #theme1 .emailTile {
-    background-color: #2D4A3E;
+    background-color: #232527;
     border: 1px solid transparent;
 }
 #theme1 .tile:hover, #theme1 .resumeTile:hover, #theme1 .emailTile:hover {
-    background-color: #3E6B57;
-    box-shadow: 0 4px 15px rgba(62, 107, 87, 0.4);
+    background-color: #313335;
 }
 
 
@@ -66,10 +65,55 @@
     -webkit-animation-play-state: paused;
 }
 
+#mainPhoto {
+    position: relative;
+}
+
+.musicBadge {
+    position: absolute;
+    right: -2px;
+    bottom: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #17181A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+    animation: musicBadgePulse 2.2s ease-in-out infinite;
+}
+
+.musicBadge .icon-play {
+    margin-left: 1px;
+}
+
+.musicBadge.playing {
+    animation: none;
+}
+
+@keyframes musicBadgePulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35), 0 0 0 0 rgba(255, 255, 255, 0.45);
+    }
+    50% {
+        transform: scale(1.12);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35), 0 0 0 6px rgba(255, 255, 255, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .musicBadge {
+        animation: none;
+    }
+}
+
 
 
 body {
-    background-color: #002664;
+    background-color: #17181A;
     margin-bottom: 80px;
     font-family: 'Poppins', sans-serif;
 }

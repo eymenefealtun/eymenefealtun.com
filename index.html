@@ -39,8 +39,12 @@
 
             <div class="float-child" id="mainPhoto" title="Müziği çalmak için tıkla (veya boşluk tuşu)" aria-label="Müziği çalmak için tıkla">
 
-                <img src="Resources/profilePhoto.png" alt="Eymen Efe Altun'un profil fotoğrafı" width="120" height="120"
+                <img id="profileImg" src="Resources/profilePhoto.png" alt="Eymen Efe Altun'un profil fotoğrafı" width="120" height="120"
                     class="imageProfilePhoto">
+                <span class="musicBadge" id="musicBadge" aria-hidden="true">
+                    <svg class="icon-play" viewBox="0 0 24 24" width="11" height="11"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                    <svg class="icon-pause" viewBox="0 0 24 24" width="11" height="11" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>
+                </span>
             </div>
 
             <div class="float-child-time">

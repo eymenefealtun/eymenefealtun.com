@@ -15,25 +15,33 @@ delta -= minutes * 60;
 var seconds = Math.round(delta % 60);
 
 var mainPhoto = document.getElementById("mainPhoto");
+var profileImg = document.getElementById("profileImg");
+var musicBadge = document.getElementById("musicBadge");
 var player = document.getElementById('player');
 player.autoplay = false;
 
-var isPlaying = false; 
+var isPlaying = false;
 
 function toggleMusicAndAnimation() {
    if (isPlaying === false) {
-      mainPhoto.setAttribute("class", "mainProfilePhoto"); 
+      profileImg.setAttribute("class", "imageProfilePhoto mainProfilePhoto");
+      musicBadge.classList.add("playing");
+      musicBadge.querySelector(".icon-play").style.display = "none";
+      musicBadge.querySelector(".icon-pause").style.display = "";
       player.play();
       isPlaying = true;
    } else {
-      mainPhoto.setAttribute("class", "mainProfilePhoto paused"); 
+      profileImg.setAttribute("class", "imageProfilePhoto mainProfilePhoto paused");
+      musicBadge.classList.remove("playing");
+      musicBadge.querySelector(".icon-play").style.display = "";
+      musicBadge.querySelector(".icon-pause").style.display = "none";
       player.pause();
       isPlaying = false;
    }
 }
 
 window.onload = function () {
-   mainPhoto.setAttribute("class", "mainProfilePhoto");
+   profileImg.setAttribute("class", "imageProfilePhoto mainProfilePhoto");
 
    mainPhoto.addEventListener("click", () => {
       toggleMusicAndAnimation();
