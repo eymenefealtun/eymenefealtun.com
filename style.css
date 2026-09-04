@@ -71,6 +71,7 @@
 body {
     background-color: #002664;
     margin-bottom: 80px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .tile {
@@ -193,6 +194,7 @@ body {
 .float-child {
     width: 120px;
     height: 120px;
+    cursor: pointer;
     /* background-color: #e1e1e1e; */
     /* padding: 10px; */
     /* border: 2px solid red; */
@@ -202,11 +204,12 @@ body {
 .float-child-time {
     width: 120px;
     height: 120px;
-    /* background-color: #e1e1e1e; */
-    /* padding: 10px; */
-    /* margin-right: -20px; */
-    /* border: 2px solid pink; */
+    display: flex;
+    align-items: center;
+}
 
+.float-child-time .timeDiv {
+    margin-top: 15px;
 }
 
 
